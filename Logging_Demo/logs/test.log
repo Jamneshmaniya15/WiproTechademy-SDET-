@@ -1,0 +1,9 @@
+2026-03-02 12:49:36,124 INFO L.LoginTest [main] Login test started
+2026-03-02 12:49:36,129 WARN L.LoginTest [main] This is a warning message
+2026-03-02 12:49:36,129 ERROR L.LoginTest [main] Login failed due to invalid cred
+2026-03-07 12:08:30,202 INFO L.LoginTest [main] Login test started
+2026-03-07 12:08:30,205 WARN L.LoginTest [main] This is a warning message
+2026-03-07 12:08:30,205 ERROR L.LoginTest [main] Login failed due to invalid cred
+2026-03-07 12:11:49,199 INFO c.l.d.LoginTest [main] Login test started
+2026-03-07 12:11:49,203 WARN c.l.d.LoginTest [main] This is a warning message
+2026-03-07 12:11:49,203 ERROR c.l.d.LoginTest [main] Login failed due to invalid cred

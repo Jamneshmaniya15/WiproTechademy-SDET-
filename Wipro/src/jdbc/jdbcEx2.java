@@ -12,7 +12,7 @@ public class jdbcEx2 {
             Connection con = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/Employee_db",
                 "root",
-                "J@mmy2810"
+                "password"
             );
 
             Statement stmt = con.createStatement();

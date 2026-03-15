@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="4" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-12T18:18:06 IST" name="ParaBank CrossBrowser Suite" finished-at="2026-03-12T18:22:14 IST" duration-ms="247688">
+    <groups>
+    </groups>
+    <test started-at="2026-03-12T18:18:06 IST" name="Chrome Test" finished-at="2026-03-12T18:19:26 IST" duration-ms="79488">
+      <class name="tests.ParaBankTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.ParaBankTest@5aa9e4eb]" started-at="2026-03-12T18:18:06 IST" name="setup" finished-at="2026-03-12T18:18:08 IST" duration-ms="1653" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerAndLoginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.ParaBankTest@5aa9e4eb]" started-at="2026-03-12T18:18:08 IST" name="registerAndLoginTest" description="Register new user and verify login on ParaBank" data-provider="registrationData" finished-at="2026-03-12T18:18:36 IST" duration-ms="28523" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jamnesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Maniya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123 MG Road]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mumbai]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Maharashtra]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[400001]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[111-22-3333]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Registration failed — URL still at register.htm. Check for errors on page. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Registration failed — URL still at register.htm. Check for errors on page. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.ParaBankTest.registerAndLoginTest(ParaBankTest.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAndLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ParaBankTest@5aa9e4eb]" started-at="2026-03-12T18:18:36 IST" name="tearDown" finished-at="2026-03-12T18:18:37 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.ParaBankTest@5aa9e4eb]" started-at="2026-03-12T18:18:37 IST" name="setup" finished-at="2026-03-12T18:18:38 IST" duration-ms="1022" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerAndLoginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.ParaBankTest@5aa9e4eb]" started-at="2026-03-12T18:18:38 IST" name="registerAndLoginTest" description="Register new user and verify login on ParaBank" data-provider="registrationData" finished-at="2026-03-12T18:19:01 IST" duration-ms="23565" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rahul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sharma]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[456 Park St]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Pune]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Maharashtra]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[411001]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9123456780]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[222-33-4444]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Test@5678]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAndLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ParaBankTest@5aa9e4eb]" started-at="2026-03-12T18:19:01 IST" name="tearDown" finished-at="2026-03-12T18:19:01 IST" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.ParaBankTest@5aa9e4eb]" started-at="2026-03-12T18:19:01 IST" name="setup" finished-at="2026-03-12T18:19:02 IST" duration-ms="943" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerAndLoginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.ParaBankTest@5aa9e4eb]" started-at="2026-03-12T18:19:02 IST" name="registerAndLoginTest" description="Register new user and verify login on ParaBank" data-provider="registrationData" finished-at="2026-03-12T18:19:25 IST" duration-ms="23109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Priya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Patel]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[789 Lake Ave]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Karnataka]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[560001]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9988776655]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[333-44-5555]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Test@9012]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAndLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ParaBankTest@5aa9e4eb]" started-at="2026-03-12T18:19:25 IST" name="tearDown" finished-at="2026-03-12T18:19:26 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ParaBankTest -->
+    </test> <!-- Chrome Test -->
+    <test started-at="2026-03-12T18:19:26 IST" name="Edge Test" finished-at="2026-03-12T18:20:43 IST" duration-ms="76973">
+      <class name="tests.ParaBankTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.ParaBankTest@385e9564]" started-at="2026-03-12T18:19:26 IST" name="setup" finished-at="2026-03-12T18:19:27 IST" duration-ms="995" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerAndLoginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.ParaBankTest@385e9564]" started-at="2026-03-12T18:19:27 IST" name="registerAndLoginTest" description="Register new user and verify login on ParaBank" data-provider="registrationData" finished-at="2026-03-12T18:19:54 IST" duration-ms="27325" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jamnesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Maniya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123 MG Road]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mumbai]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Maharashtra]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[400001]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[111-22-3333]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Registration failed — URL still at register.htm. Check for errors on page. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Registration failed — URL still at register.htm. Check for errors on page. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.ParaBankTest.registerAndLoginTest(ParaBankTest.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAndLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ParaBankTest@385e9564]" started-at="2026-03-12T18:19:54 IST" name="tearDown" finished-at="2026-03-12T18:19:54 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.ParaBankTest@385e9564]" started-at="2026-03-12T18:19:54 IST" name="setup" finished-at="2026-03-12T18:19:55 IST" duration-ms="1013" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerAndLoginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.ParaBankTest@385e9564]" started-at="2026-03-12T18:19:55 IST" name="registerAndLoginTest" description="Register new user and verify login on ParaBank" data-provider="registrationData" finished-at="2026-03-12T18:20:18 IST" duration-ms="22887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rahul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sharma]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[456 Park St]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Pune]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Maharashtra]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[411001]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9123456780]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[222-33-4444]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Test@5678]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAndLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ParaBankTest@385e9564]" started-at="2026-03-12T18:20:18 IST" name="tearDown" finished-at="2026-03-12T18:20:18 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.ParaBankTest@385e9564]" started-at="2026-03-12T18:20:18 IST" name="setup" finished-at="2026-03-12T18:20:19 IST" duration-ms="924" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerAndLoginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.ParaBankTest@385e9564]" started-at="2026-03-12T18:20:19 IST" name="registerAndLoginTest" description="Register new user and verify login on ParaBank" data-provider="registrationData" finished-at="2026-03-12T18:20:42 IST" duration-ms="23241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Priya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Patel]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[789 Lake Ave]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Karnataka]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[560001]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9988776655]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[333-44-5555]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Test@9012]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAndLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ParaBankTest@385e9564]" started-at="2026-03-12T18:20:42 IST" name="tearDown" finished-at="2026-03-12T18:20:43 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ParaBankTest -->
+    </test> <!-- Edge Test -->
+    <test started-at="2026-03-12T18:20:43 IST" name="Firefox Test" finished-at="2026-03-12T18:22:14 IST" duration-ms="91201">
+      <class name="tests.ParaBankTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.ParaBankTest@8c3b9d]" started-at="2026-03-12T18:20:43 IST" name="setup" finished-at="2026-03-12T18:20:52 IST" duration-ms="9738" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerAndLoginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.ParaBankTest@8c3b9d]" started-at="2026-03-12T18:20:52 IST" name="registerAndLoginTest" description="Register new user and verify login on ParaBank" data-provider="registrationData" finished-at="2026-03-12T18:21:13 IST" duration-ms="20378" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jamnesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Maniya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123 MG Road]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mumbai]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Maharashtra]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[400001]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[111-22-3333]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Registration failed — URL still at register.htm. Check for errors on page. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Registration failed — URL still at register.htm. Check for errors on page. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.ParaBankTest.registerAndLoginTest(ParaBankTest.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAndLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ParaBankTest@8c3b9d]" started-at="2026-03-12T18:21:13 IST" name="tearDown" finished-at="2026-03-12T18:21:14 IST" duration-ms="1100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.ParaBankTest@8c3b9d]" started-at="2026-03-12T18:21:14 IST" name="setup" finished-at="2026-03-12T18:21:23 IST" duration-ms="9464" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerAndLoginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.ParaBankTest@8c3b9d]" started-at="2026-03-12T18:21:23 IST" name="registerAndLoginTest" description="Register new user and verify login on ParaBank" data-provider="registrationData" finished-at="2026-03-12T18:21:43 IST" duration-ms="19913" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rahul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sharma]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[456 Park St]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Pune]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Maharashtra]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[411001]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9123456780]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[222-33-4444]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Test@5678]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Registration failed — URL still at register.htm. Check for errors on page. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Registration failed — URL still at register.htm. Check for errors on page. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.ParaBankTest.registerAndLoginTest(ParaBankTest.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAndLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ParaBankTest@8c3b9d]" started-at="2026-03-12T18:21:43 IST" name="tearDown" finished-at="2026-03-12T18:21:44 IST" duration-ms="1048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.ParaBankTest@8c3b9d]" started-at="2026-03-12T18:21:44 IST" name="setup" finished-at="2026-03-12T18:21:53 IST" duration-ms="9135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerAndLoginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.ParaBankTest@8c3b9d]" started-at="2026-03-12T18:21:53 IST" name="registerAndLoginTest" description="Register new user and verify login on ParaBank" data-provider="registrationData" finished-at="2026-03-12T18:22:13 IST" duration-ms="19359" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Priya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Patel]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[789 Lake Ave]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Karnataka]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[560001]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9988776655]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[333-44-5555]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Test@9012]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Registration failed — URL still at register.htm. Check for errors on page. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Registration failed — URL still at register.htm. Check for errors on page. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.ParaBankTest.registerAndLoginTest(ParaBankTest.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAndLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ParaBankTest@8c3b9d]" started-at="2026-03-12T18:22:13 IST" name="tearDown" finished-at="2026-03-12T18:22:14 IST" duration-ms="1058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ParaBankTest -->
+    </test> <!-- Firefox Test -->
+  </suite> <!-- ParaBank CrossBrowser Suite -->
+</testng-results>
